@@ -1,5 +1,5 @@
 import { useRoutes } from "react-router-dom";
-import { Home, Login,Register, NotFound} from "../pages";
+import { Welcome, Login,Register, NotFound, AddFiliale,AllFiliale} from "../pages";
 import React from "react";
 import ProtectedRoutes from "./ProtectedRoutes";
 const Routers =  () =>useRoutes([
@@ -17,7 +17,15 @@ const Routers =  () =>useRoutes([
     children: [
       {
         path: "/",
-        element:  <Home/>
+        element:  <Welcome/>
+      },
+      {
+        path: "/addFiliale",
+        element:  <AddFiliale/>
+      },
+      {
+        path: "/Filiales",
+        element:  <AllFiliale/>
       }
     ],
   },
