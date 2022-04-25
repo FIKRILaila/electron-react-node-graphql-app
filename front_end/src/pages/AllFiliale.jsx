@@ -28,7 +28,7 @@ export const AllFiliale = () => {
             `http://localhost:4000/images/${filiale.image.filename}`
           }
            alt=""
-           className='my-4'/>
+           className='my-4 h-56'/>
            <button className='self-end block bg-red-600 rounded-md p-2 text-white text-sm'>Delete</button>
         </div>
       ))}
