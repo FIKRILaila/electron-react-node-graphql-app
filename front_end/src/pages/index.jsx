@@ -5,4 +5,6 @@ import {NotFound} from "./NotFound";
 import {AddFiliale} from "./AddFiliale";
 import {AllFiliale} from "./AllFiliale";
 import { Welcome } from "./Welcome";
-export {Login,Register,Home,NotFound,AddFiliale,Welcome,AllFiliale};
+import { AddProject } from "./AddProject";
+import { AllProjects } from "./AllProjects";
+export {Login,Register,Home,NotFound,AddFiliale,Welcome,AllFiliale,AllProjects,AddProject};

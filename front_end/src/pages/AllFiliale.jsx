@@ -16,7 +16,6 @@ query Filiales {
 }`
 export const AllFiliale = () => {
   const { loading, error, data} = useQuery(GET_FILIALES);
-  console.log(data);
 
   return (
     <div className='grid grid-cols-4 gap-4'>

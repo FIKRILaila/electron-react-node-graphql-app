@@ -22,7 +22,9 @@ export function Home() {
         <nav className='text-center'>
           <p className="block py-2.5 px-4 rounded hover:bg-sky-700"> <Link to='/'>Home</Link></p>
           <p className="block py-2.5 px-4 rounded hover:bg-sky-700"> <Link to='/addFiliale'>Add Filiale</Link></p>
-          <p className="block py-2.5 px-4 rounded hover:bg-sky-700"><Link to='/Filiales'>All Filiale</Link></p>
+          <p className="block py-2.5 px-4 rounded hover:bg-sky-700"><Link to='/Filiales'>Filiales</Link></p>
+          <p className="block py-2.5 px-4 rounded hover:bg-sky-700"> <Link to='/addProject'>Add Project</Link></p>
+          <p className="block py-2.5 px-4 rounded hover:bg-sky-700"><Link to='/Projects'>Projects</Link></p>
           <p className='block py-2.5 px-4 rounded hover:bg-sky-700' onClick = {LogOut}>Logout</p>
         </nav>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {useState } from "react"
+import {useState} from "react"
 import { Input, TextArea } from "../components"
 import ClipLoader from "react-spinners/ClipLoader";
 import { css } from "@emotion/react";
@@ -25,10 +25,10 @@ export const AddFiliale = () => {
 
   
   const ADD_FILIALE = gql
-  `mutation addFiliale($file : Upload!) {
+  `mutation addFiliale($file : Upload!, $name : String!, $description : String!) {
     addFiliale(input: {
-      name:filialeName
-      description: filialeDescription
+      name:$name
+      description: $description
       image: $file
     }){
        name
@@ -50,7 +50,7 @@ export const AddFiliale = () => {
   });
   const addFiliale = async () => {
     setName(false)
-    newFiliale({ variables: {input: { name: filialeName, description: filialeDescription, image: file.file } }})
+    newFiliale({ variables: { name: filialeName, description: filialeDescription, image: file.file  }})
     };
   return (
     <div className="w-full flex flex-col rounded-lg py-8 items-center shadow bg-white">

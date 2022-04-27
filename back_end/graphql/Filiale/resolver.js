@@ -1,15 +1,15 @@
 const {singleUpload} =require( "../../middleware/auth")
 const {Filiale} =require("../../models/Filiale")
-
+const {GraphQLUpload} = require('graphql-upload');
 
 const resolvers = {
   Query: {
     Filiales: async () => await Filiale.find()
   },
+  Upload: GraphQLUpload,
   Mutation: {
     addFiliale: async (_, { input }) => {
 
-      console.log(input);
       const { image } = await input
 
       let { filename, mimetype, encoding } = await singleUpload({ file: image })

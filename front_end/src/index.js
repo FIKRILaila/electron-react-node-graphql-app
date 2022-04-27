@@ -13,7 +13,6 @@ import { createUploadLink } from 'apollo-upload-client';
 import { AuthContext_Component } from "./store/AuthContext";
 
 const client = new ApolloClient({
-  uri: "http://localhost:4000/graphql",
   cache: new InMemoryCache(),
   link: createUploadLink({
     uri: "http://localhost:4000/graphql",

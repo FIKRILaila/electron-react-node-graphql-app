@@ -13,7 +13,7 @@ const typeDefs = gql`
   input FilialeInput {
     name: String!
     description: String!
-    image: Upload
+    image: Upload!
   }
 
   type Query {

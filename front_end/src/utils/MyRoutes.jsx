@@ -1,5 +1,5 @@
 import { useRoutes } from "react-router-dom";
-import { Welcome, Login,Register, NotFound, AddFiliale,AllFiliale} from "../pages";
+import { Welcome, Login,Register, NotFound, AddFiliale,AllFiliale,AddProject,AllProjects} from "../pages";
 import React from "react";
 import ProtectedRoutes from "./ProtectedRoutes";
 const Routers =  () =>useRoutes([
@@ -26,6 +26,14 @@ const Routers =  () =>useRoutes([
       {
         path: "/Filiales",
         element:  <AllFiliale/>
+      },
+      {
+        path: "/addProject",
+        element:  <AddProject/>
+      },
+      {
+        path: "/Projects",
+        element:  <AllProjects/>
       }
     ],
   },
